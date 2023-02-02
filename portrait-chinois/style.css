@@ -1,0 +1,521 @@
+@font-face {
+    font-family: 'monaSans';
+    src: url('./fonts/monasans/MonaSans.woff') format('woff');
+    src: url('./fonts/monasans/MonaSans.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'nunito';
+    src: url('./fonts/Nunito-Regular.woff') format('woff');
+    src: url('./fonts/nunito/Nunito-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'generalSans';
+    src: url('./fonts/generalSans/GeneralSans-Bold.woff') format('woff');
+    src: url('./fonts/generalSans/GeneralSans-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+body,
+html {
+    font-family: 'monaSans', 'sans-serif';
+    height: 100%;
+}
+
+/* scrollbar  */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: #fefefe double 1px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+
+/* barre espace effet scroll*/
+
+html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-margin-block: 1;
+}
+
+/* css général */
+
+body {
+    font-family: 'monaSans', 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+    background-color: #000;
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-right: auto;
+    min-height: 100vh;
+}
+
+
+/* accueil */
+
+.heading {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image:
+        linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)),
+        radial-gradient(90% 100% at calc(50% + var(--x)) calc(0% + var(--y)), rgb(200 200 200), rgb(022 000 045)),
+        radial-gradient(100% 100% at calc(80% - var(--x)) calc(0% - var(--y)), rgb(231, 235, 29), rgb(036 000 000)),
+        radial-gradient(150% 210% at calc(100% + var(--x)) calc(0% + var(--y)), rgb(020 175 125), rgb(000 010 255)),
+        radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)),
+        linear-gradient(60deg, rgb(213, 132, 132), rgb(92, 74, 165));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+    background-repeat: no-repeat;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading-fade {
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, transparent, black);
+    position: absolute;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 4em;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 0.1px white;
+    margin: 0.2em;
+}
+
+/* codepen City Nights Effect */
+@keyframes lights {
+    0% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: hsl(230, 100%, 95%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: hsl(230, 80%, 90%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: hsl(230, 40%, 80%);
+        text-shadow:
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+}
+
+/* effet définition portrait */
+.def {
+    position: relative;
+    font-size: 1.2em;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgb(233, 233, 138);
+    transition: all 0.4s ease-in-out;
+    animation: lights 2s 500ms linear infinite;
+}
+
+/* présentation */
+h3 {
+    font-size: 2em;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgb(40, 151, 220);
+}
+
+.textPrez {
+    border: 4px double #1C6EA4;
+    border-radius: 36px;
+    padding: 1em;
+}
+
+p span {
+    font-family: 'generalSans' 'Times New Roman', serif;
+    color: #1C6EA4;
+}
+
+.presentation {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 1.2em;
+    font-family: 'generalSans', 'Times New Roman', serif;
+}
+
+.presentation img {
+    width: 150px;
+    height: 150px;
+    margin-top: 0.5;
+    margin-bottom: 2em;
+    clip-path: circle(50%);
+}
+
+
+/* coloration images */
+
+.filter {
+    filter: grayscale(1);
+    transition: filter 0.5s ease-in;
+}
+
+.filter:hover {
+    filter: grayscale(0);
+}
+
+/*contenu*/
+
+img {
+    position: relative;
+    display: block;
+}
+
+.stylized-title,
+.stylized-valor {
+    font-family: 'generalSans', 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.stylized-title {
+    color: #488cfb;
+}
+
+.stylized-valor {
+    color: #ededed;
+}
+
+.description {
+    text-align: center;
+}
+
+.phrase {
+    font-family: 'generalSans', 'Times New Roman', serif;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+
+/* mise en forme formulaire*/
+
+h5 {
+    font-size: 1.6em;
+    color: transparent;
+    -webkit-text-stroke: 1px #488cfb;
+    text-transform: uppercase;
+    font-family: 'generalSans', 'Times New Roman', serif;
+    position: relative;
+    filter: drop-shadow(0 0 1rem white);
+    margin: auto;
+    z-index: 1;
+}
+
+form {
+    z-index: 1;
+}
+
+.formu {
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+input[type="submit"] {
+    background-color: #488cfb;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px double rgb(0, 0, 0);
+}
+
+input:required {
+    border: 2px double #488cfb;
+    border-radius: 20px;
+}
+
+input:required:valid {
+    border: 2px double #488cfb;
+    border-radius: 20px;
+}
+
+.arg {
+    height: 10vh;
+}
+
+.formbtn {
+    padding-top: 10px;
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: 'generalSans', 'Times New Roman', serif;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* formulaire cadre code css @Clenio21 */
+
+.formu {
+    width: 490px;
+    height: 780px;
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background: rgb(5, 5, 22);
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.formu::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#488cfb,
+            #29dbbc,
+            #ddf505,
+            #ff9f0e,
+            #e440bb,
+            #655adc,
+            #488cfb);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+}
+
+.formu:hover::after {
+    animation-play-state: running;
+
+}
+
+@keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+}
+
+.formu,
+.formu::after {
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.formu:active {
+    --border-width: 5px;
+    z-index: 0;
+}
+
+/* footer */
+
+footer {
+    padding: 100px 0;
+}
+
+/* Mentions légales*/
+
+.pop-up-button {
+    background: none;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFEA53;
+    border-radius: 5px;
+    border: 1px solid #FFEA53;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pop-up-button:hover {
+    background: rgb(236, 203, 16);
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+
+}
+
+.pop-up {
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+
+}
+
+.pop-up-visible {
+    display: block;
+}
+
+
+.close-pop-up {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #212121;
+    color: #fff;
+    font-size: 1.25em;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+
+}
+
+.pop-up-text {
+    padding: 20px;
+    text-align: center;
+    width: 90vh;
+}
+
+.pop-up-text p {
+    color: #000;
+}
+
+.sstitre {
+    text-transform: uppercase;
+    font-family: "generalSans", 'Times New Roman', serif;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+a {
+    font-family: "generalSans", 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(236, 203, 16);
+}
+
+/* bouton retour haut page*/
+
+.top {
+    --offset: 50px;
+
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    width: fit-content;
+    bottom: 20px;
+
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background: #FFEA53;
+    border-radius: 100px;
+
+    cursor: none;
+    cursor: url(images/curseur.png) 3 9, auto;
+
+}

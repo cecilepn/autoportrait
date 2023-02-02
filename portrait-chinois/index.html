@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait chinois - Cécile Phan Nguyen </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/iconfav.png">
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>PORTRAIT CHINOIS </h1>
+        <p class="def"> Présentation ludique et imaginative de se présenter.
+        </p>
+
+        <div class="heading-fade"></div>
+    </div>
+
+    <div class="presentation">
+        <h3>Qui suis-je ? </h3>
+        <img src="images/portrait.jpg" class="filter">
+        <p class="textPrez">Je suis <span>Phan Nguyen Cécile</span> , étudiante en BUT MMI et voici mon portrait chinois
+            :) </p>
+    </div>
+
+    <div id="analogies-container"></div>
+    <div>
+
+        <section class="formu" id="formulaire">
+            <h5> A votre tour !</h5>
+            <form method="get">
+                <h4>Mail</h4>
+                <input type="email" placeholder=" Votre mail" id="mail" required>
+                <h4>Si j'étais...</h4>
+                <input type="text" placeholder=" (exemple : une couleur)" id="analogie" required>
+                <h4>Je serais...</h4>
+                <input type="text" placeholder=" (exemple : le bleu)" id="valeurAnalogie" required>
+                <h4>Image</h4>
+                <input type="url" id="imgAnalogie" name="imgAnalogie" placeholder=" URL de l'image" required>
+                <h4>Explications</h4>
+                <textarea class="arg" type="text" placeholder="(exemple : parce que c'est ma couleur préférée...)"
+                    id="argAnalogie" cols="40" rows="5" spellcheck="true"></textarea>
+                <p class="formbtn">
+                    <input type="submit" value="Envoyer et créer" id="sub">
+                </p>
+                <div id="verPerso"></div>
+            </form>
+        </section>
+
+        <div id="vous">
+
+        </div>
+
+        <div class="pop-up">
+            <button type="button" class="close-pop-up">
+                <span class="visually-hidden">x</span>
+            </button>
+            <div class="pop-up-text">
+                <p class="sstitre">Éditeur :</p>
+                <p>Cécile PHAN NGUYEN, étudiante de
+                    l’Université Gustave Eiffel</p>
+                <p>Hébergeur : Université Gustave Eiffel</p>
+                <p>Université Gustave Eiffel : 5 boulevard Descartes - Champs-sur-Marne - 77454 Marne-la-Vallée Cedex2 -
+                    Tél
+                    : 33(1).60.95.75.00 - Fax : 33(1).60.95.75.75</p>
+
+                <p class="sstitre">Images :</p>
+                <p><a href="https://unsplash.com/fr">Unsplash</a>
+                    <a href="https://www.shutterstock.com/es/g/Kafunee">@Kafunee</a>
+                    <a href="https://tobefonseca.com/"> @Tobe Fonseca</a>
+                    <br>
+                </p>
+                <p class="sstitre">Fonts :</p>
+                <p><a href="https://github.com/github/mona-sans">MONA SANS</a>
+                    <a href="https://www.fontshare.com/fonts/general-sans">GENERAL SANS</a>
+                    <a href="https://www.fontshare.com/fonts/nunito">NUNITO</a>
+                    <br>
+                </p>
+
+                <p>Toutes les images utilisées sur cette page sont libres de droit pour usage personnel, et ne feront
+                    jamais l'objet d'une commercialisation.</p>
+                <p class="sstitre">Législation relative aux données à caractère personnel</p>
+                <p>Le formulaire permettant la création d’une analogie personnalisée recueille votre adresse de courriel
+                    et
+                    votre adresse IP.
+                    Pour toute question portant sur la collecte ou le traitement de vos données à caractère personnel
+                    par
+                    l’UPEM, vous pouvez saisir la personne responsable du traitement des données qui est : Philippe
+                    Gambette
+                    (philippe.gambette@univ-eiffel.fr).
+                    Les fichiers détenus par l'UPEM qui comportent des données à caractère personnel ne seront jamais
+                    transmis à des tiers et ne feront jamais l'objet d'une commercialisation.</p>
+                <p>©2023 Tous droits réservés par Cécile PHAN NGUYEN.</p>
+            </div>
+        </div>
+
+        <footer>
+            <button class="pop-up-button">Mentions légales</button>
+        </footer>
+
+        <a href="#" class="top">&#8593;</a>
+
+        <script src="data.js"></script>
+        <script src="script.js"> </script>
+
+</body>
+
+</html>

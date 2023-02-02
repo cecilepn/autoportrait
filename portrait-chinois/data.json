@@ -1,0 +1,46 @@
+{
+    "analogies": [
+        {
+            "analogie": "une planète",
+            "valeurAnalogie": "Neptune",
+            "description": "Neptune est la planète la plus éloignée du système solaire et représente l'imagination. En plus de son bleu qui est ma couleur préférée, je suis quelqu'un de très imaginative.",
+            "img": "images/neptune.png"
+        },
+        {
+            "analogie": "un tableau",
+            "valeurAnalogie": "La Nuit Étoilée de Van Gogh",
+            "description": "Tableau mythique, il est un tableau qui m'intrigue et dans lequel je voyage. Le ciel est comme personnifié, sûrement pour représenter l'univers de la vie après la mort. ",
+            "img": "images/nuitetoilee.jpeg"
+        },
+        {
+            "analogie": "un pokémon ",
+            "valeurAnalogie": "Mélofée",
+            "description": "Pokemon, dessin animé de mon enfance, Mélofée est un pokémon auquel je me rattache de par son nom (Phe est mon surnom) et son personnage est lunaire. ",
+            "img": "images/melofee.png"
+        },
+        {
+            "analogie": "un film",
+            "valeurAnalogie": "Château dans le Ciel",
+            "description": "Il s'agit d'un de mes films d'animation préféré qui me tient à coeur. Deux enfants qui partent à la poursuite de leur rêve à la recherche du château Laputa auquel personne ne croit l'existence. Tout comme ils le sont, je suis déterminée et motivée à poursuivre mes rêves.",
+            "img": "images/castleinthesky.png"
+        },
+        {
+            "analogie": "une fleur",
+            "valeurAnalogie": " un cosmos",
+            "description": "Le cosmos représente la joie et l'espoir. C'est une fleur que j'aime offrir car elle est marque de reconnaissance et de gratitude.",
+            "img": "images/cosmos.png"
+        },
+        {
+            "analogie": "un album ",
+            "valeurAnalogie": "CTV3 de Jaden Smith",
+            "description": "CTV3 est un album de 17 chansons écrites et composées par Jaden Smith. C'est un album avec un storytelling de l'adolescence à la jeune vie d'adulte. Chacune des chansons me transporte émotionnellement et m'accompagne dans toute situation forte que je traverse.",
+            "img": "images/ctv3.png"
+        },
+        {
+            "analogie": "une chanson",
+            "valeurAnalogie": "Tired de Su Lee ",
+            "description": "Tired est une chanson écrite par une solo artiste Su Lee. La chanson décrit parfaitement mon état actuel : la fatigue. Mais malgré la fatigue, mon envie d'apprendre et d'évoluer me poussent à continuer et à aller plus loin.",
+            "img": "images/tired.png"
+        }
+    ]
+}
