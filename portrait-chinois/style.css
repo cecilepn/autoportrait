@@ -109,7 +109,7 @@ h1 {
     font-size: 4em;
     position: relative;
     color: transparent;
-    -webkit-text-stroke: 0.1px white;
+    -webkit-text-stroke: 1px white;
     margin: 0.2em;
 }
 
@@ -432,7 +432,7 @@ footer {
 }
 
 .pop-up {
-    width: fit-content;
+    width: 800px;
     height: fit-content;
     background: #ffffff;
     position: relative;
@@ -505,9 +505,8 @@ a {
     display: block;
     margin-left: auto;
     margin-right: 20px;
-    width: fit-content;
     bottom: 20px;
-
+    width: 1%;
     text-decoration: none;
     padding: 10px;
     font-family: sans-serif;
